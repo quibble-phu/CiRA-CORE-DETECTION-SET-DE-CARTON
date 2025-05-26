@@ -22,7 +22,7 @@ bom_df = bom_df[bom_df["STATION_NO"] == MyStation]
 bom_df["ITEM_DESCRIPTION"] = bom_df["ITEM_DESCRIPTION"].str.strip().str.lower()
 bom_df["ITEM_NUMBER"] = bom_df["ITEM_NUMBER"].str.strip()#.str.lower()
 map_df["Original_Part"] = map_df["Original_Part"].str.strip()#.str.lower()
-ignore_df["Ignore_Part"] = ignore_df["ITEM_Part"].str.strip()#.str.lower()
+ignore_df["Ignore_Part"] = ignore_df["Ignore_Part"].str.strip()#.str.lower()
 
 # เอา BOM ที่ไม่อยู่ใน ignore list เท่านั้น
 bom_df = bom_df[~bom_df["ITEM_NUMBER"].isin(ignore_df["Ignore_Part"])]
