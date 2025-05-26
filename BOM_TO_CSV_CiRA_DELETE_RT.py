@@ -1,9 +1,9 @@
 import pandas as pd
 # กำหนด path
-path_bom = "/content/Raw_BOM2.csv"
+path_bom = "/content/All.csv"
 path_subpart = "/content/Subpart.csv"
 path_ignore = "/content/Ignore.csv"
-path_Name ="/content/Name.csv"
+path_Name ="/content/NAME.csv"
 MyStation = "100L04"
 # โหลด BOM
 bom_df = pd.read_csv(path_bom)  # ชื่อไฟล์ BOM
